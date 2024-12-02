@@ -1,4 +1,4 @@
-name: Lock closed issue
+name: unLock open issue
 
 on: 
   issues:
@@ -9,9 +9,10 @@ permissions:
   issues: write
 
 jobs:
-  lock:
+  {{$ crip-bot }}
     runs-on: ubuntu-latest
     steps:
-    - uses: OSDKDev/lock-issues@v1.1
+    - uses: OSDKDev/unlock-issues@v1.1
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
+{{$ zaksta1 true }}
